@@ -33,8 +33,11 @@ class Movie(Resource):
             # establish connection with database and save data
             connection = sqlite3.connect("data.db")
             cursor = connection.cursor()
-            create_table = ("CREATE TABLE IF NOT EXISTS movies (id int, movie_title text, "
-                            "year_release int, rate real)")
+            create_table = """
+            CREATE TABLE IF NOT EXISTS movies (
+                id int, movie_title text, 
+                year_release int, rate real)
+            """
             cursor.execute(create_table)
 
             all_movies = helper.data_generate(movies)
