@@ -30,7 +30,7 @@ def validate_schema(data: dict, schema: dict) -> None:
 
 
 def data_generate(movies: list) -> list:
-    """ Genrate movie data.
+    """ Generate movie data.
 
     Args:
         movies (list): list with movies data
@@ -38,7 +38,7 @@ def data_generate(movies: list) -> list:
     Returns:
         list with filtrated movies data
     """
-    # genrate helper lists
+    # generate helper lists
     titles = [dict_data["movie_title"] for dict_data in movies]
     years = [dict_data["year_release"] for dict_data in movies]
     rates = [dict_data["rate"] for dict_data in movies]
