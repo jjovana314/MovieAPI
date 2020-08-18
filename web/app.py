@@ -38,8 +38,8 @@ class Movie(Resource):
                 id int, movie_title text, 
                 year_release int, rate real)
             """
-            cursor.execute(create_table)
 
+            cursor.execute(create_table)
             all_movies = helper.data_generate(movies)
             insert_query = "INSERT INTO movies VALUES (?, ?, ?, ?)"
             # here we can also insert one by one row with loop
