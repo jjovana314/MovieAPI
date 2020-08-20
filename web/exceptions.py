@@ -28,3 +28,11 @@ class MinimumSchemaError(MovieSchemaError):
 
 class MaximumSchemaError(MovieSchemaError):
     """ Raised if value from data is greather than maximum. """
+
+
+class MinimumItmesError(MovieSchemaError):
+    """ Raised if length of sequence is less than minimum. """
+
+
+class MaximumItemsError(MovieSchemaError):
+    """ Raised if length of sequence is greather than maximum. """
