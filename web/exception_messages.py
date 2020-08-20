@@ -12,16 +12,20 @@ schema_errors = [
     "Failed validating 'minLength' in schema",
     "Failed validating 'maxLength' in schema",
     "Failed validating 'minimum' in schema",
-    "Failed validating 'maximum' in schema"
+    "Failed validating 'maximum' in schema",
+    "Failed validating 'minItems' in schema",
+    "Failed validating 'maxItems' in schema"
 ]
 
 error_messages = [
     "Invalid type of data",
     "Please enter all required fields",
-    "String length is less then minimum",
+    "String length is less than minimum",
     "String length exceeded maximum",
-    "Value is less then minimum",
-    "Value is greater then maximum"
+    "Value is less than minimum",
+    "Value is greather than maximum",
+    "Sequence length is less than minimum",
+    "Sequence length is greather than maximum"
 ]
 
 all_exceptions = [
@@ -30,7 +34,9 @@ all_exceptions = [
     exceptions.MinLengthSchemaError,
     exceptions.MaxLengthSchemaError,
     exceptions.MinimumSchemaError,
-    exceptions.MaximumSchemaError
+    exceptions.MaximumSchemaError,
+    exceptions.MinimumItmesError,
+    exceptions.MaximumItemsError
 ]
 
 schema_exceptions = []
