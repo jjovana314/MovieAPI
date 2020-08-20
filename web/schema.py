@@ -15,7 +15,9 @@ movie_schema = {
         },
         "stars": {
             "type": "array",
-            "items": {"type": "string"}
+            "items": {"type": "string"},
+            "minItems": 3,
+            "maxItems": 10
         }
     },
     "required": ["movie_title", "year_release", "rate"],
